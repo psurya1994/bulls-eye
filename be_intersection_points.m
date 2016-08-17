@@ -19,7 +19,7 @@ function [points] = be_intersection_points(img, center, segments)
     points = cell(segments,1);
     % looping through all segments
     i = 1;
-    for theta = 0:360/segments:359
+    for theta = 0:360/segments:359.9
 %     for theta = 70
         theta_rad = theta*pi/180;
         disp(['Processing ' num2str(i) 'th segment'])
